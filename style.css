@@ -272,9 +272,113 @@ button {
 }
 
 /* Copyright section CSS: */
-.copyright{
+.copyright {
   text-align: center;
   color: #9393c4;
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+/* ! Responsive:(for mobile devise only) */
+@media (max-device-width: 767px) {
+  /* Global container (image) */
+  .container {
+    padding: 0 16px;
+  }
+  .between {
+    gap: 3rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .banner-section {
+    padding: 60px 16px;
+    position: relative;
+    right: 115px;
+
+    & h1 {
+      font-size: 40px;
+    }
+
+    & div {
+      padding: 16px 0;
+      font-size: 20px;
+    }
+  }
+
+  .track-section {
+    .bg-track {
+      left: 0%;
+      top: 0%;
+      width: 100%;
+    }
+
+    .left-section {
+      & h2 {
+        font-size: 45px;
+      }
+      .image-grid {
+        padding-top: 40px;
+        padding-left: 40px;
+        gap: 16px;
+
+        & div {
+          width: 130px;
+          gap: 26px;
+        }
+      }
+    }
+
+    .right-section {
+      & h3 {
+        font-size: 24px;
+        padding-right: 0rem;
+      }
+
+      .track-details-div {
+        gap: 16px;
+        margin-top: 24px;
+
+        & div {
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+  .brand {
+    margin-top: 30px;
+  }
+
+  .join {
+    margin: 80px auto;
+    border-radius: 24px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    .join-details {
+      margin: 16px;
+
+      & h2 {
+        font-size: 40px;
+      }
+
+      .target-store-btn {
+        gap: 12px;
+        padding: 12px 24px;
+        border-radius: 14px;
+
+        & h3 {
+          font-size: 16px;
+        }
+
+        & img {
+          width: 20px;
+        }
+      }
+      
+    }
+    & img{
+      width: 100%;
+    }
+  }
 }

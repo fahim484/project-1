@@ -21,13 +21,17 @@ button {
   cursor: pointer;
 }
 /* Global container (image) */
-container{
-    max-width: 1240px;
-    margin: 0% auto;
+container {
+  max-width: 1240px;
+  margin: 0% auto;
+}
+.between {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
 }
 /* Global or Common CSS end */
-
-
 
 /* Navbar section CSS: */
 .navbar {
@@ -86,10 +90,10 @@ container{
 /* Target Section CSS: */
 .target-section {
   padding: 140px 0;
-  display: grid;
+  /* display: grid;
   gap: 5rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: center;
+  align-items: center; */
 
   & img {
     width: 100%;
@@ -110,28 +114,52 @@ container{
       font-weight: 400;
     }
 
-    .target-store-btn{
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        padding: 16px 28px;
-        background-color: #cce8fd;
-        border-radius: 20px;
-        width: fit-content;
+    .target-store-btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 28px;
+      background-color: #cce8fd;
+      border-radius: 20px;
+      width: fit-content;
 
-        & p{
-            font-size: 12px;
-            color: #9393c4;
-        }
+      & p {
+        font-size: 12px;
+        color: #9393c4;
+      }
 
-        & h3{
-            font-size: 18px;
-            font-weight: 600;
-        }
+      & h3 {
+        font-size: 18px;
+        font-weight: 600;
+      }
 
-        & img{
-            width: 25px;
-        }
+      & img {
+        width: 25px;
+      }
+    }
+  }
+}
+
+/* Track section CSS: */
+.track-section {
+  position: relative;
+
+  .bg-track {
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 10%;
+  }
+
+  .left-section {
+    & h2 {
+      font-size: 85px;
+    }
+    .image-grid {
+      padding-top: 80px;
+      padding-left: 80px;
+      display: flex;
+      gap: 20px;
     }
   }
 }

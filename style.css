@@ -240,7 +240,7 @@ button {
     flex-direction: column;
     gap: 24px;
 
-    & h2{
+    & h2 {
       font-size: 68px;
     }
 
@@ -269,5 +269,12 @@ button {
       }
     }
   }
-  }
+}
+
+/* Copyright section CSS: */
+.copyright{
+  text-align: center;
+  color: #9393c4;
+  font-size: 20px;
+  margin-bottom: 20px;
 }

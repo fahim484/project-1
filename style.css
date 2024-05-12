@@ -21,7 +21,7 @@ button {
   cursor: pointer;
 }
 /* Global container (image) */
-container {
+.container {
   max-width: 1240px;
   margin: 0% auto;
 }

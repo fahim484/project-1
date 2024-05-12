@@ -161,42 +161,42 @@ button {
       display: flex;
       gap: 20px;
 
-      & div{
+      & div {
         width: 150px;
         display: flex;
         flex-direction: column;
         gap: 20px;
       }
-      
-      & div:nth-child(2){
+
+      & div:nth-child(2) {
         margin-top: 40px;
       }
     }
   }
 
-  .right-section{
-    & h3{
+  .right-section {
+    & h3 {
       font-size: 40px;
       color: #9393c4;
       font-weight: 400;
       padding-right: 8rem;
     }
 
-    .track-details-div{
+    .track-details-div {
       display: flex;
       align-items: start;
       gap: 30px;
       margin-top: 60px;
 
-      & div{
+      & div {
         padding-top: 20px;
 
-        & h2{
+        & h2 {
           font-size: 24px;
           font-weight: 600;
         }
 
-        & p{
+        & p {
           font-size: 20px;
           color: #9393c4;
           font-weight: 400;
@@ -208,20 +208,66 @@ button {
   }
 }
 
-
-/* Track section CSS: */
-
-
+/* Calories section CSS: */
 
 /* Brand section CSS: */
-.brand{
+.brand {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  & img{
+  & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+/* Join section CSS: */
+.join {
+  width: 90%;
+  margin: 120px auto;
+  background-color: #d9f4ff;
+  border-radius: 56px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  .join-details {
+    display: flex;
+    justify-content: center;
+    margin: 0% auto;
+    flex-direction: column;
+    gap: 24px;
+
+    & h2{
+      font-size: 68px;
+    }
+
+    .target-store-btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 28px;
+      background-color: #130f49;
+      border-radius: 20px;
+      width: fit-content;
+
+      & p {
+        font-size: 12px;
+        color: #9393c4;
+      }
+
+      & h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+      }
+
+      & img {
+        width: 25px;
+      }
+    }
+  }
   }
 }
